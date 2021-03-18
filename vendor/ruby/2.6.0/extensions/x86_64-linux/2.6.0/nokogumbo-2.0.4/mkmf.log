@@ -1,0 +1,59 @@
+find_header: checking for libxml/tree.h in /home/kikluz/development/personal/middleman/laParrillaGrill/vendor/ruby/2.6.0/gems/nokogiri-1.11.1-x86_64-linux/ext/nokogiri/include/libxml2... -------------------- yes
+
+"gcc -o conftest -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/home/kikluz/.rbenv/versions/2.6.5/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -std=c99 conftest.c  -L. -L/home/kikluz/.rbenv/versions/2.6.5/lib -Wl,-rpath,/home/kikluz/.rbenv/versions/2.6.5/lib -L. -L/home/kikluz/.rbenv/versions/2.6.5/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/kikluz/.rbenv/versions/2.6.5/lib -L/home/kikluz/.rbenv/versions/2.6.5/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -E -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/home/kikluz/.rbenv/versions/2.6.5/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -std=c99  conftest.c -o conftest.i"
+conftest.c:3:10: fatal error: libxml/tree.h: No such file or directory
+ #include <libxml/tree.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/tree.h>
+/* end */
+
+"gcc -E -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/home/kikluz/.rbenv/versions/2.6.5/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -std=c99 -I/home/kikluz/development/personal/middleman/laParrillaGrill/vendor/ruby/2.6.0/gems/nokogiri-1.11.1-x86_64-linux/ext/nokogiri/include/libxml2 conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/tree.h>
+/* end */
+
+--------------------
+
+find_header: checking for nokogiri.h in /home/kikluz/development/personal/middleman/laParrillaGrill/vendor/ruby/2.6.0/gems/nokogiri-1.11.1-x86_64-linux/ext/nokogiri... -------------------- yes
+
+"gcc -E -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/home/kikluz/development/personal/middleman/laParrillaGrill/vendor/ruby/2.6.0/gems/nokogiri-1.11.1-x86_64-linux/ext/nokogiri/include/libxml2 -I/home/kikluz/.rbenv/versions/2.6.5/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -std=c99  conftest.c -o conftest.i"
+conftest.c:3:10: fatal error: nokogiri.h: No such file or directory
+ #include <nokogiri.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <nokogiri.h>
+/* end */
+
+"gcc -E -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/kikluz/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/home/kikluz/development/personal/middleman/laParrillaGrill/vendor/ruby/2.6.0/gems/nokogiri-1.11.1-x86_64-linux/ext/nokogiri/include/libxml2 -I/home/kikluz/.rbenv/versions/2.6.5/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -std=c99 -I/home/kikluz/development/personal/middleman/laParrillaGrill/vendor/ruby/2.6.0/gems/nokogiri-1.11.1-x86_64-linux/ext/nokogiri conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <nokogiri.h>
+/* end */
+
+--------------------
+

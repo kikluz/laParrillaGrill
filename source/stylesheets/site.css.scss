@@ -96,16 +96,11 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-<<<<<<< HEAD
+
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
-=======
   font-family: "proxima_novalight","brandon-grotesque",sans-serif;
-    color: #7f7f7f; 
-    // line-height: 1.3em;
-    font-size: 1.66667vw;
-    line-height: 2.83333vw;
->>>>>>> 2c9c2d9ba5c3f3336d8d6df6b6657328aec82d30
+  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
   h1 {

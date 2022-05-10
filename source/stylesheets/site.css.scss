@@ -74,6 +74,10 @@ ul {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: var(--clr-green-light);
+  
+}
 h1,
 h2,
 h3,
@@ -101,6 +105,25 @@ p {
   color: var(--clr-grey-5);
   font-family: "proxima_novalight","brandon-grotesque",sans-serif;
   color: var(--clr-grey-5);
+}
+
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-green-light);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid var(--clr-green-dark);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+.btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-red-dark);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -243,6 +266,9 @@ hr {
 //--------------------------------------------------------------------------------------------------------------
 // Two columns How to Center a Div Vertically and Horizontally with Flexbox, https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
 //--------------------------------------------------------------------------------------------------------------
+.info {
+  padding: 25px;
+}
 @media (min-width: 768px) {
   .info {
   padding:100px;
@@ -274,6 +300,7 @@ footer {
   h1, a, p {color:#fff5f5;}
   
 }
+
 .footer_wrapper {
   text-align: center;
   padding:3rem;
@@ -301,15 +328,25 @@ footer {
   width: 100%;
 }
 
-.column_menu, .column_contact {
-  padding-right: 2em;
+.columns_flex {
   display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding: 5rem 0 ;
 }
-.column_menu {
-  a {font-size: 2em;}
+.item {
+   flex-basis:auto; /* default auto */
+}
+.contact-item a {
+  color: var( --clr-green-light);
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 600px) {
+  .columns_flex {
+    flex-direction: column;
+  }
 }
 
 //--------------------------------------------------------------------------------------------------------------

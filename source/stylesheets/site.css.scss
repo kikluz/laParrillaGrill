@@ -73,9 +73,10 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--clr-green-light);
 }
 a:hover {
-  color: var(--clr-green-light);
+  color: var(--clr-green-dark);
   
 }
 h1,
@@ -109,7 +110,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: transparent;
+  background: var(--clr-red-dark);
   color: var(--clr-green-light);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -121,10 +122,10 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
-.btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-red-dark);
-}
+// .btn:hover {
+//   color: var(--clr-white);
+//   background: var(--clr-red-dark);
+// }
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -260,7 +261,10 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
  h1 {color: white;}
-  p {color: white;}
+  .title-intro {
+    color: white;
+    font-size: 1.5em;
+  }
 }
 
 //--------------------------------------------------------------------------------------------------------------
@@ -332,7 +336,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  gap: 10rem;
   padding: 5rem 0 ;
 }
 .item {
@@ -343,9 +347,14 @@ footer {
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .columns_flex {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 0 ;
+    text-align: center;
   }
 }
 

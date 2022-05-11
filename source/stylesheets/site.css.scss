@@ -186,8 +186,9 @@ hr {
 
 .topnav {
   overflow: hidden;
-  // background-color: #333;
+  // background: rgba(255,131,0,.95);
 }
+ 
 
 .topnav a {
   float: left;
@@ -200,11 +201,11 @@ hr {
 }
 
 .topnav a:hover {
-  background-color: #4a1e00;
+  background-color: #49cd53;
 }
 
 .topnav a.active {
-  background-color: #49cd53;
+  // background-color: #49cd53;
   color: white;
 }
 

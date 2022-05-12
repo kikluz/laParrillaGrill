@@ -19,5 +19,9 @@
         <%= yield %>
       </main>
       <%= partial "layouts/footer" %>
+      
+      <!-- change the order of the script element so that it's defined when getElementById is callled  -->
+       <%= javascript_include_tag "siteMenu" %>
+      
   </body>
 </html>

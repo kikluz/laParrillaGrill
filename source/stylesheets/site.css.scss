@@ -434,26 +434,28 @@ footer {
 //---------------------------------------------------------------------------------------
 // TEST MENU WITH FLEX 
 //---------------------------------------------------------------------------------------
-$gap : 4vh;
+
 // Style rules for container class
 .menu-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  border: 1vh solid var(--clr-red-dark);
-   padding: 0.375rem 0.75rem;
-   gap: $gap;
-    align-content: flex-start ;
+ align-items: baseline;
+   gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
 }
-.item {
-  order: 8;
-} 
+
+
 
 .menu-container {
     // for mabile 
     @media screen and (max-width: 800px) {
-      display: grid;
-    display: column;
+     display: grid;
+     flex-direction: column;
+       column-gap: 20px;
   }
 }
+
+
+// testing columns flax 
 

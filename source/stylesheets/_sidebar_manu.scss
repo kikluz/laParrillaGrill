@@ -118,7 +118,7 @@
 .section-menu {
   display: flex;
   @include query(mobile){
-flex-direction: row;
+flex-direction: column;
   }
 	// we use the 20% of the total width
 	flex-grow: 2;

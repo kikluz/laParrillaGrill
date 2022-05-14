@@ -94,7 +94,7 @@
   display: flex;
   flex-direction: row;
   gap: $gap;
-  padding: $padding;
+  // padding: $padding;
 @include query(mobile){
     display: flex;
     flex-direction: column;

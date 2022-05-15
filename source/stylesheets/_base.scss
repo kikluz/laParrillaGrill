@@ -276,7 +276,7 @@ footer {
 
 .footer_wrapper {
   text-align: center;
-  padding:3rem;
+  padding:5rem;
 }
 .footer_email {
   font-size: 1.2em;
@@ -349,15 +349,19 @@ footer {
 }
 
 // re deign the the info hours info 
-.section-hours{
+.section-location{
+
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+  p{line-height: 1.6;}
+  justify-content: space-evenly;
   @include query(tablet){
     display: flex;
     flex-direction: column;
   }
-  display: flex;
-  padding: $padding;
-  p{line-height: 1.6;}
-  justify-content: center;
+
+  
 
 .section-hours-info{
   padding-right: 2em;

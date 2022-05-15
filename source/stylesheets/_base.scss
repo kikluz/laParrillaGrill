@@ -350,13 +350,16 @@ footer {
 
 // re deign the the info hours info 
 .section-hours{
-  display: flex;
-  padding: $padding;
-  p{line-height: 1.6;}
   @include query(tablet){
     display: flex;
     flex-direction: column;
   }
-.section-hours-info{}
+  display: flex;
+  padding: $padding;
+  p{line-height: 1.6;}
+  justify-content: center;
+.section-hours-info{
+  padding-right: 2em;
+}
   .aside-map-info{}
 }

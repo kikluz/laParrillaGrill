@@ -3,47 +3,47 @@
 //------------------------------------------------------------------- 
 
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-gold: #dd9d13;
-  --clr-bg: #f3ede1;
+/* dark shades of primary color*/
+--clr-primary-1: hsl(205, 86%, 17%);
+--clr-primary-2: hsl(205, 77%, 27%);
+--clr-primary-3: hsl(205, 72%, 37%);
+--clr-primary-4: hsl(205, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(205, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(205, 89%, 70%);
+--clr-primary-7: hsl(205, 90%, 76%);
+--clr-primary-8: hsl(205, 86%, 81%);
+--clr-primary-9: hsl(205, 90%, 88%);
+--clr-primary-10: hsl(205, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--clr-gold: #dd9d13;
+--clr-bg: #f3ede1;
 
-  --clr-red-dark: hsl(350, 100%, 46%, 0.6);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
+--clr-red-dark: #8e110d;
+--clr-red-light: hsl(360, 71%, 66%);
+--clr-green-dark: hsl(125, 67%, 44%);
+--clr-green-light: hsl(125, 71%, 66%);
+--clr-black: #222;
+--transition: all 0.3s linear;
+--spacing: 0.1rem;
+--radius: 0.25rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+--fixed-width: 620px;
 }
 
 // the flex model 
@@ -51,15 +51,15 @@ $gap : 4vh;
 $padding : 4vh;
 $color : #48CAE4;
 $bp : (
-  mobile : 480px,
-  tablet : 768px,
+  mobile : 600px,
+  tablet : 800px,
   desktop : 1440px,
-);
+  );
 
 @mixin query($display){
   @each $key, $value in $bp{
-    
-    //  defining max-width
+
+//  defining max-width
     @if ($display == $key){
       @media (max-width: $value){@content;}
     }
@@ -78,12 +78,12 @@ $bp : (
   box-sizing: border-box;
 }
 body {
-      width: 100%;
-    min-height: 100vh;
-   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+  "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+  "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+  "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   background: var(--clr-bg);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -91,7 +91,7 @@ body {
 }
 img {
   width: 100%;
-  aspect-ratio: auto 1 / 1; 
+  display: block;
 }
 ul {
   list-style-type: none;
@@ -102,7 +102,7 @@ a {
 }
 a:hover {
   color: var(--clr-green-dark);
-  
+
 }
 h1,
 h2,
@@ -115,6 +115,7 @@ h4 {
 }
 h1 {
   font-size: 3rem;
+  color: var(--clr-red-dark);
 }
 h2 {
   font-size: 2rem;
@@ -132,6 +133,13 @@ p {
   color: var(--clr-grey-3);
 }
 
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background: var(--clr-red-dark);
+  margin-left: auto;
+  margin-right: auto;
+}
 .btn {
   text-transform: uppercase;
   background: var(--clr-red-dark);
@@ -200,6 +208,10 @@ hr {
   padding: 2em;  
 }
 
+.pages-header{
+  padding: 20px;
+  h1{text-align:center;}
+}
 
 //--------------------------------------------------------------------------------------------------------------
 // Hero Image
@@ -207,18 +219,18 @@ hr {
 
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../images/la_parrilla.jpg");
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../images/la_parrilla.jpg");
 @media (min-width: 768px) {
-  /* Set a specific height */
-  height: 600px;
+/* Set a specific height */
+height: 600px;
 }
-  height: 260px;
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+height: 260px;
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
 
 /* Place text in the middle of the image */
@@ -228,7 +240,7 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- h1 {color: white;}
+  h1 {color: white;}
   .title-intro {
     color: white;
     font-size: 1.5em;
@@ -236,7 +248,8 @@ hr {
 }
 
 //--------------------------------------------------------------------------------------------------------------
-// Two columns How to Center a Div Vertically and Horizontally with Flexbox, https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
+// main index quotation review
+// https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
 //--------------------------------------------------------------------------------------------------------------
 .info {
   padding: 25px;
@@ -244,8 +257,8 @@ hr {
 }
 @media (min-width: 768px) {
   .info {
-  padding:100px;
-  p {font-size: 1.5em;}
+    padding:100px;
+    p {font-size: 1.5em;}
   }  
 }
 .main_name {
@@ -253,12 +266,64 @@ hr {
 }
 
 .events_panel {
-  
+
   justify-content: center;
   align-items: center;
-    top: 50%;
-    left: 50%;
-   
+  top: 50%;
+  left: 50%;
+
+}
+
+
+//--------------------------------------------------------------------------------------------------------------
+// two columns section info menu, hours, conctact
+//--------------------------------------------------------------------------------------------------------------
+// re deign the the info hours info 
+.section-location{
+  a{color: var(--clr-red-dark);}
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+  p{line-height: 1.6;}
+  justify-content: space-evenly;
+  @include query(tablet){
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .section-hours-info{
+    padding-right: 2em;
+  }
+  .aside-map-info{}
+}
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------
+// About page 
+//--------------------------------------------------------------------------------------------------------------
+.row {
+  @include query(tablet){
+    display: inline-block;
+  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  p {
+    line-height: 1.8;
+    font-size: 1.3em;
+  }
+  padding-right: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
 //--------------------------------------------------------------------------------------------------------------
@@ -271,7 +336,7 @@ footer {
   text-decoration: none;
   font-size: 17px;
   h1, a, p {color:#fff5f5;}
-  
+
 }
 
 .footer_wrapper {
@@ -282,89 +347,4 @@ footer {
   font-size: 1.2em;
 }
 
-//--------------------------------------------------------------------------------------------------------------
-// three columns section info menu, hours, conctact
-//--------------------------------------------------------------------------------------------------------------
 
-.wrapper_info {
-  padding: 15px;
-}
-.row_info {
-  padding: 100px 0;
-      // text-align: center;
-  @media screen and (max-width: 600px) {
-  display: inline-block;
-}
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.columns_flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10rem;
-  padding: 5rem 0 ;
-}
-.item {
-   flex-basis:auto; /* default auto */
-}
-.contact-item a {
-  color: var( --clr-green-light);
-}
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media screen and (max-width: 800px) {
-  .columns_flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-    padding: 5rem 0 ;
-    text-align: center;
-  }
-}
-
-//--------------------------------------------------------------------------------------------------------------
-// About page 
-//--------------------------------------------------------------------------------------------------------------
-.row {
-  @media screen and (max-width: 600px) {
-  display: inline-block;
-}
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  padding-right: 2em;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-// re deign the the info hours info 
-.section-location{
-
-    display: flex;
-    flex-direction: row;
-    padding: 100px;
-  p{line-height: 1.6;}
-  justify-content: space-evenly;
-  @include query(tablet){
-    display: flex;
-    flex-direction: column;
-  }
-
-  
-
-.section-hours-info{
-  padding-right: 2em;
-}
-  .aside-map-info{}
-}

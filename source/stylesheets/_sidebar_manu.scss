@@ -1,5 +1,6 @@
 
 //////-----------------------------this is an example of menu
+
 .menu-body {
   max-width: 680px;
   margin: 0 auto;
@@ -95,7 +96,7 @@
   flex-direction: row;
   gap: $gap;
   // padding: $padding;
-@include query(mobile){
+@include query(tablet){
     display: flex;
     flex-direction: column;
 }

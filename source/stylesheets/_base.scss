@@ -126,7 +126,6 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
   font-family: "proxima_novalight","brandon-grotesque",sans-serif;
@@ -172,6 +171,7 @@ p {
   h3,
   h4 {
     line-height: 1;
+    text-transform: uppercase;
   }
 }
 /*  global classes */
@@ -190,10 +190,10 @@ p {
 }
 
 hr {
-  max-width: 26em;
+  max-width: 25em;
   margin-right: auto;
   margin-left: auto;
-  color: #26b6d8;
+  color: #8e110d;
 }
 
 .container_wrapper {
@@ -346,4 +346,17 @@ footer {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+}
+
+// re deign the the info hours info 
+.section-hours{
+  display: flex;
+  padding: $padding;
+  p{line-height: 1.6;}
+  @include query(tablet){
+    display: flex;
+    flex-direction: column;
+  }
+.section-hours-info{}
+  .aside-map-info{}
 }

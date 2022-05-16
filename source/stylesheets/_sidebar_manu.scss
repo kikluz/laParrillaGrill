@@ -48,7 +48,7 @@
 }
 
 //---------------------------------------------------------------------------------------
-// TEST MENU WITH FLEX 
+//  MENU WITH FLEX 
 //---------------------------------------------------------------------------------------
 
 // Style rules for container class
@@ -66,11 +66,12 @@
        column-gap: 20px;
   }
 }
+.tabs{text-transform: uppercase;}
 
 .item {
   h3 {
    color: var(--clr-green-dark);
-   ext-transform: uppercase;
+   text-transform: uppercase;
   }
   h4 {
     font-size:1.2em;

@@ -59,19 +59,19 @@
 }
 
 .menu-container {
-    // for mabile 
-    @media screen and (max-width: 800px) {
-     display: grid;
-     flex-direction: column;
-       column-gap: 20px;
+// for mabile 
+  @media screen and (max-width: 800px) {
+    display: grid;
+    flex-direction: column;
+    column-gap: 20px;
   }
 }
 .tabs h3 {text-transform: uppercase;}
 
 .item {
   h3 {
-   color: var(--clr-green-dark);
-   text-transform: uppercase;
+    color: var(--clr-green-dark);
+    text-transform: uppercase;
   }
   h4 {
     font-size:1.2em;
@@ -97,64 +97,64 @@
   display: flex;
   flex-direction: row;
   gap: $gap;
-  // padding: $padding;
-@include query(tablet){
+// padding: $padding;
+  @include query(tablet){
     display: flex;
     flex-direction: column;
-}
-    [class ^="tabs"]{
-        // put div left & right, text at center  
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 2px solid $color;
-            padding: 20px;
-
-            // setup for mobile 
-            @include query(mobile){
-                // height: 50vh -$padding *2;
-            }
-    }
-    // styles for the lef div 
-.section-menu {
-  display: flex;
-  height: min-content;
-  @include query(mobile){
-flex-direction: column;
   }
-	// we use the 20% of the total width
-	flex-grow: 2;
-}
+  [class ^="tabs"]{
+// put div left & right, text at center  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid $color;
+    padding: 20px;
 
-   .tablinks{
+// setup for mobile 
+    @include query(mobile){
+// height: 50vh -$padding *2;
+    }
+  }
+// styles for the lef div 
+  .section-menu {
+    display: flex;
+    height: min-content;
+    @include query(mobile){
+      flex-direction: column;
+    }
+// we use the 20% of the total width
+    flex-grow: 2;
+  }
+
+  .tablinks{
     padding: 10px;
-}
+  }
 
 // hover underline 
-.menu-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #8e110d;
-}
+  .menu-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #8e110d;
+  }
 
-.menu-underline-animation:after {
-  content: '';
-  position: absolute;
-  width: 80%;
-  text-align: center;
-  transform: scaleX(0);
-  height: 1.5px;
-  bottom: 0;
-  left: 0;
-  background-color: #8e110d;
-  transform-origin: bottom center;
-  transition: transform 0.30s ease-out;
-}
+  .menu-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #8e110d;
+    transform-origin: bottom center;
+    transition: transform 0.30s ease-out;
+  }
 
-.menu-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom center;
-}
+  .menu-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
 }
 
 

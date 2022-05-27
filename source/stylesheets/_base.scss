@@ -289,6 +289,7 @@ position: relative;
   @include query(tablet){
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
 
